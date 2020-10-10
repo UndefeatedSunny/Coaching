@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+    FILE *fp;
+    char line[80];  /*
+    fopen("FileName", mode); //mode "r", "w", "a"
+    fclose(fp);
+
+    Functions to write into file: fputc(), fputs(), fprintf()
+
+    Functions to read from file: fgetc(), fgets(), fscanf(); */
+    fp = fopen("myTest.txt", "w");
+    if(fp == NULL) {
+        printf("\nFile could not be open");
+        exit(-1);
+    } else {
+        fputs("\nMy first line", fp);
+        fputs("\nThis is going to be a second line", fp);
+        fputs("\nThis is going to be a second line", fp);
+        fputs("\nThis is going to be a second line", fp);
+        fputs("\nThis is going to be a second line", fp);
+        fputs("\nThis is going to be a second line", fp);
+    }
+    fclose(fp);
+    fp = fopen("myTest.txt", "r");
+    if(fp != NULL) {
+        while(fgets(line, 80, fp)) {
+            printf("\nLine = %s", line);
+        }
+    }
+    fclose(fp);
+}
