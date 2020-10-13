@@ -16,3 +16,10 @@ w+ - It opens a file in read and write mode. If file is not present then a new f
 
 
 a+ - It opens a file in read and write mode. If file is not present then a new file will be created automatically. If file is already present then its contents will be preserved.
+
+
+
+
+              Important Point
+              
+              Make loop for multiple printf,scanf,fprintf,fscanf (if we know how much data we fetch and show wrt console).
