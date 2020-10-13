@@ -23,7 +23,7 @@ int main()
     for(int i=0;i<2;i++)                  // Take 2 Entries only.
     {
         scanf("%d",&s[i].rno);
-        fflush(stdin);
+        fflush(stdin);              // Clear the memory Buffer
         scanf("%s",s[i].name);
         fflush(stdin);
     }
