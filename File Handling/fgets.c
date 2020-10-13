@@ -21,3 +21,6 @@ int main()
     fclose(fp);
     return 0;
 }
+
+
+// Whole 1 line is taken from the file and print on the console/screen.
