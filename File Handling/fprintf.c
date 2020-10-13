@@ -8,7 +8,8 @@ int main()
     char c[10]= "Sunny";
     float n2= 11.121;
 
-    fp = fopen("sunny.txt","w");
+    // fp = fopen("sunny.txt","w");      // Write Mode 1
+    // fp = fopen("sunny.txt","w");      // Append Mode 2
 
     if(fp==NULL)
     {
@@ -26,7 +27,15 @@ int main()
 
 /*
 OUTPUT
-          100
+          100                       Write Mode
           11.121
           Sunny
+          
+                        100        Append Mode
+                        11.121
+                        Sunny
+                        100
+                        11.121
+                        Sunny
+
 */
