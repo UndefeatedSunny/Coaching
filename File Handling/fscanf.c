@@ -34,3 +34,4 @@ output
             100.111000
             sunny
 */
+// Note :- Automatically specify the type else take 0 in place of that.
