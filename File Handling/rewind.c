@@ -9,7 +9,7 @@ int main()
     char str[100];
     char ch;
 
-    // fp = fopen("sunny.txt","a+");  // Both read and write    -> old value vanish
+    // fp = fopen("sunny.txt","w+");  // Both read and write    -> old value vanish
     
     // fp = fopen("sunny.txt","a+");  // Both read and write    -> old value remains same
 
