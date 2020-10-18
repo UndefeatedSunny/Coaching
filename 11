@@ -20,3 +20,46 @@ int main(void) {
 
 
 namespace
+
+
+#include<iostream>
+
+using namespace std;
+
+// private:, public:, protected:
+// Structures have all public by default
+// classes have all private by default
+
+class Employee {
+    int emp_id;
+    char name[20];
+    float salary;
+public:
+    void getInput(void);
+    void display(void);
+};
+void Employee::getInput(void) {
+    cout << "\nEnter emp_id: ";
+    cin >> emp_id;
+    cout << "Enter name: ";
+    cin >> name;
+    cout << "Enter Salary: ";
+    cin >> salary;
+}
+
+void Employee::display(void) {
+    cout << "\nEmp_id: " << emp_id;
+    cout << "\nName: " << name;
+    cout << "\nSalary: " << salary;
+}
+int main(void) {
+    Employee e1, e2;
+
+    e1.getInput();
+    e1.display();
+
+    e2.getInput();
+    e2.display();
+
+    return 0;
+}
